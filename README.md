@@ -1,2 +1,2 @@
-# mtx-dev..github.io
+# mtx-dev.github.io
 Alex Courses 
