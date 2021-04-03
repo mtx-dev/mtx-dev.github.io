@@ -1,0 +1,16 @@
+Hi. Your task contain two parts UI and JS. 
+Each part is independent and place in an appropriate folder, where you will find a .txt file with requirement.
+
+
+The task will not be accepted if:
+1. There is no access to the repository
+2. The web page was made not as on the design
+3. The JS task not fulfill the task conditions
+
+
+A link to the repository with the completed task and demo links with hosted website and JS task must be sent in response to this letter.
+
+
+NOTE: This link will help you to create repository on GitHub and host you ready work on GitHub Pages for free
+
+https://pinegrow.com/tutorials/how-to-host-your-html-website-on-github-pages-for-free/

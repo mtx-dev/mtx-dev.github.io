@@ -1,0 +1,279 @@
+body {
+    background-color: #393939;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #666666;    
+    font-weight: normal;
+    margin: 0px 0px 30px 0px;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Georgia,Times,Times New Roman,serif; 
+}
+
+.clearfix {
+    clear: both;
+}
+
+.top-border {
+    width: 100%;
+    height: 5px;
+    background-color: #a7c353;
+    float: left;
+}
+.logo-block {
+    float: left;
+    max-width: 160px;
+    padding: 28px 0px 0px 20px;
+}
+
+.logo-block span {
+    float: left;
+    color: #999999;
+}
+
+.logo-text {
+    font-size: 26px;
+}
+
+.logo-text::first-letter {
+    font-size: 32px;
+}
+
+.logo-slogan {
+    font-size: 12px;
+}
+
+.main-menu {
+    float: right;
+    display: block;
+}
+
+.main-menu  ul,
+.main-menu  ul li {
+    margin: 0;
+    padding: 0;
+}
+.main-menu  ul {
+    list-style-type: none;    
+}
+
+.main-menu  li {
+    float: left; 
+    display: inline-block;
+}
+
+.main-menu ul li a {
+    display: block;
+    padding: 52px 20px 32px 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #979797;   
+}
+
+.main-menu ul li a:hover{
+    background: linear-gradient(0deg, #f6f6f3 0%, #ffffff 100%);
+    color: #707070;
+}
+
+.main-menu .select-menu a {
+    background-color: #a7c353;
+    color: white;
+}
+
+.main-menu .select-menu a:hover {
+    background: linear-gradient(0deg, #a0bb4e 0%, #a7c353 100%);
+    color:white;
+}
+
+.bottom-border {
+    height: 1px;
+    margin: 0px 20px;
+    background-color: #a7c353;    
+}
+
+.shout {
+    margin: 0 auto;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    padding: 42px 120px 42px 120px;
+    color: #666666;    
+}
+
+.slider {
+    margin: 0px 20px;    
+    overflow: hidden;
+}
+
+.slider-wrapper {  
+    background-color: teal;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;    
+}
+
+.slider-item {
+
+}
+
+.slider-title {
+    position: absolute; 
+    right: 100px;
+    bottom: 23px;
+    width: 35%;
+}
+
+.slider-title h2{   
+   display: block;
+   width: 100%;
+   padding: 8px 14px;
+   margin: 10px 0px;
+   text-align: center;
+   font-size: 22px;
+   font-weight: normal;
+   color: white;
+   background-color: #a0bb4e;   
+}
+
+.slider-title span{    
+    padding: 14px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: normal;
+    color: #999999;
+    background-color: white;
+    display: block;
+}
+
+.slider-control {
+    content: '';
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 10; 
+    width: 52px;    
+    height: 52px;     
+    transform: translateY(-50%);
+    opacity: 0.5;        
+    border: 2px solid #a7c353;    
+    background-color: black;
+    border-radius: 50%; 
+}
+.slider-control:hover {
+    opacity: 1;
+}
+
+.slider-control-left {
+    left: 1%;
+}
+
+.slider-control-right {
+    right: 1%;
+}
+
+.slide-switch {
+    text-align: center;    
+    margin: 0 auto;
+    padding: 18px 0px 18px 0px;
+}
+
+.slider-point {    
+    margin: 2px;
+    display: inline-block;
+    content: '';
+    width: 10px;    
+    height: 10px;     
+    border: 3px solid #a7c353;    
+    background-color: #a7c353;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-point-active {
+    background-color: transparent;
+}
+
+.separator {
+    height: 1px;
+    margin: 20px 20px;
+    background-color: #e2e2e2;    
+}
+
+.content {
+    box-sizing: border-box;    
+}
+
+.image-content {
+    width: 100%;
+    height: 100%;    
+    /* border: 1px solid #e2e2e2; */
+    /* border: solid 6px #fff; */
+    /* outline: solid 6px #888; */
+    border: double white grey;
+}
+
+.content p {
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.5em;
+}
+
+.readmore {
+    text-align: right;
+    font-size: 13px;
+    color: #a7c353;
+    float: right; 
+    text-decoration: none;
+}
+
+.col1-3 {    
+    box-sizing: border-box;  
+    padding: 20px;
+    width: calc(100%/3);
+    float: left;    
+}
+
+.service-item {
+    width: 100%;
+    margin-bottom: 18px;
+} 
+.service-item div{
+    width: 65%;
+    float: left;    
+}
+
+.service-item img {
+    width: 64px;
+    height: 64px;
+    background-color: whitesmoke;
+    float: left;
+    margin-right: 18px;
+}
+
+.service-item h5 {
+    font-size: 14px;
+    color: #878787;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.service-item p {
+    margin-top: 10px;
+    display: block;
+}
+
+/* div {
+    border: 1px solid;
+} */
