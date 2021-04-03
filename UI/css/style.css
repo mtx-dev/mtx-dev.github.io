@@ -214,15 +214,15 @@ h3 {
 .content {
     box-sizing: border-box;    
 }
+.image-border {
+    border: 1px solid #e2e2e2;
+    padding: 4px;
+}
 
 .image-content {
     width: 100%;
-    height: 100%;    
-    /* border: 1px solid #e2e2e2; */
-    /* border: solid 6px #fff; */
-    /* outline: solid 6px #888; */
-    border: double white grey;
-}
+    height: 100%;   
+}    
 
 .content p {
     font-size: 13px;
