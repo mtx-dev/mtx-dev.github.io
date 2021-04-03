@@ -1,27 +1,39 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #393939;
+    background-color: #313131;
     padding: 0px;
     margin: 0px;
+    height: 100%;
 }
 
 h3 {
     font-size: 22px;
     color: #666666;    
     font-weight: normal;
-    margin: 0px 0px 30px 0px;
-    
+    margin: 0px 0px 24px 0px;    
 }
 
 .container {
-    width: 100%;
+    width: 100%;        
     max-width: 1200px;
+    min-height: calc(100% - 300px);
     margin: 0 auto;
     background-color: white;
     font-family: Georgia,Times,Times New Roman,serif; 
+    position: relative;
 }
 
 .clearfix {
+    content: "";
     clear: both;
+    display: table;
+}
+
+.marb2 {
+    margin-bottom: 20px;
 }
 
 .top-border {
@@ -30,6 +42,7 @@ h3 {
     background-color: #a7c353;
     float: left;
 }
+
 .logo-block {
     float: left;
     max-width: 160px;
@@ -115,16 +128,15 @@ h3 {
     overflow: hidden;
 }
 
-.slider-wrapper {  
-    background-color: teal;
+
+.slider-wrapper {      
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 350px;    
 }
 
-.slider-item {
-
+.slider-item img{
+    width: 100%;    
 }
 
 .slider-title {
@@ -212,7 +224,8 @@ h3 {
 }
 
 .content {
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    margin-bottom: 155px;
 }
 .image-border {
     border: 1px solid #e2e2e2;
@@ -222,6 +235,7 @@ h3 {
 .image-content {
     width: 100%;
     height: 100%;   
+    display: block;
 }    
 
 .content p {
@@ -247,7 +261,7 @@ h3 {
 
 .service-item {
     width: 100%;
-    margin-bottom: 18px;
+    padding-bottom: 90px;
 } 
 .service-item div{
     width: 65%;
@@ -274,6 +288,43 @@ h3 {
     display: block;
 }
 
-/* div {
-    border: 1px solid;
-} */
+.comment {
+
+}
+
+.author {
+    position: relative;
+    font-size: 16px;
+    color: #989898;
+}
+
+.author::before {
+    content: '\201c';    
+    height: 53px;    
+    font-family: Georgia, serif;
+    font-size: 130px;
+    line-height: 0.8em;
+    font-weight: bold;    
+    color: #d4d4d4;
+    display: inline-block;
+    vertical-align: middle;
+}
+      
+.author span {
+    font-weight: bold;
+}
+
+.col1-4 {    
+    box-sizing: border-box;  
+    padding: 20px;
+    width: calc(100%/4);
+    float: left;    
+}
+
+.footer {
+    background-color: #313131;
+}
+
+.copyright {
+    background-color: #313131;
+}
