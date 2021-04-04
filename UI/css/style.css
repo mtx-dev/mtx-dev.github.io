@@ -5,7 +5,7 @@ html {
 body {
     background-color: #313131;
     padding: 0px;
-    margin: 0px;
+    margin: 0px 20px;
     height: 100%;
 }
 
@@ -16,10 +16,20 @@ h3 {
     margin: 0px 0px 24px 0px;    
 }
 
+a {
+    text-decoration: none;
+    color: #a7c353;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 .container {
-    width: 100%;        
+    width: 100%;            
     max-width: 1200px;
-    min-height: calc(100% - 300px);
+    
     margin: 0 auto;
     background-color: white;
     font-family: Georgia,Times,Times New Roman,serif; 
@@ -80,16 +90,15 @@ h3 {
     list-style-type: none;    
 }
 
-.main-menu  li {
-    float: left; 
-    display: inline-block;
+.main-menu li {
+    display: block;
+    float: left;     
 }
 
 .main-menu ul li a {
     display: block;
     padding: 52px 20px 32px 20px;
-    font-size: 13px;
-    text-decoration: none;
+    font-size: 13px;    
     color: #979797;   
 }
 
@@ -248,8 +257,7 @@ h3 {
     text-align: right;
     font-size: 13px;
     color: #a7c353;
-    float: right; 
-    text-decoration: none;
+    float: right;     
 }
 
 .col1-3 {    
@@ -260,9 +268,9 @@ h3 {
 }
 
 .service-item {
-    width: 100%;
     padding-bottom: 90px;
 } 
+
 .service-item div{
     width: 65%;
     float: left;    
@@ -286,10 +294,6 @@ h3 {
 .service-item p {
     margin-top: 10px;
     display: block;
-}
-
-.comment {
-
 }
 
 .author {
@@ -316,15 +320,136 @@ h3 {
 
 .col1-4 {    
     box-sizing: border-box;  
-    padding: 20px;
+    padding: 20px 10px 10px 10px;
     width: calc(100%/4);
     float: left;    
 }
 
+.left {
+    padding-left: 0px;
+}
+
+.right {
+    padding-right: 0px;
+}
+
 .footer {
     background-color: #313131;
+    height: 430px;    
+}
+
+.footer h4 {
+    color: white;
+    font-size: 16px;    
+    font-weight: normal;    
+    margin: 20px 0px 0px 0px;
+}
+
+.footer .readmore {
+    font-size: 12px;
+}
+
+.footer-line {
+    height: 1px;
+    margin: 20px 0px;
+    background-color: #3a3a3a;    
+}
+
+.details p{
+    color: #999999;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.social-block a {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.social-block div{
+    border-bottom: 1px solid #3a3a3a;
+    margin-top: 16px;
+}
+
+.icon::before {    
+    content: '';    
+    width: 32px;
+    height: 32px;    
+    border-radius: 50%;    
+    background-color: #383838;
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;    
+    margin: 0px 8px 8px 0px;
+}
+
+.blog-block {
+    color: #999999;
+    padding-bottom: 10px;
+}
+
+.blog-block h5 {
+    color: white;
+    font-size: 13px;    
+    font-weight: normal;    
+    margin: 20px 0px 0px 0px; 
+}
+
+.blog-block span, .blog-block p {
+    font-size: 11px;
+    line-height: 1.5em;
+    margin-top: 6px;
+}
+.form-input {
+    width: 100%;    
+    box-sizing: border-box;
+    color: #989898;
+    font-family: Georgia,Times,Times New Roman,serif; 
+    font-size: 13px;
+    line-height: 1.5em;
+    padding: 6px 12px 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #383838;
+    border: none;
+}
+
+.form-input:focus {
+    background-color: #363636;
+}
+
+.form-textarea {
+    resize: none;
+    margin-bottom: 6px;
+}
+
+.botton {
+    font-family: Georgia,Times,Times New Roman,serif; 
+    font-size: 13px;        
+    color: #313131;    
+    padding: 8px 12px 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.button-action {
+    font-weight: bold;
+    background-color: #a7c353;
+}
+
+.button-action:hover, .button-action:focus {
+    background-color: #b7da51;
+}
+.button-action:active {
+    background-color: #c5eb54;
 }
 
 .copyright {
     background-color: #313131;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.copyright .right {
+    float: right;
 }
