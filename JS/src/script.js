@@ -1,6 +1,8 @@
 'use strict'
+
 let data;
 const dataFile = 'data/list.json'
+const urlDataFile = new URL(dataFile, document.location)
 
 async function readData(dataFile) {
     data = await fetch(dataFile).then((response) => {
@@ -60,7 +62,7 @@ function createUlList(list) {
     return ul;
 }
 
-function getListContentByChar(char) {
+function getListByChar(char) {
     const result = [];
     let firstChar = '';
     if(data && char) {
@@ -85,9 +87,6 @@ function updateUlList(ulList) {
     }
 }
 
-readData(dataFile);
-
-
 window.onload = function () {
     let label = document.querySelector('label ~ br');
     label.after(generateLettersSelection());
@@ -95,21 +94,10 @@ window.onload = function () {
 
     select.addEventListener('change', (choosedLetter) => {
         let choose = choosedLetter.target.options.selectedIndex;
-        const list = getListContentByChar(choosedLetter.target.options[choose].value);
+        const list = getListByChar(choosedLetter.target.options[choose].value);
         const ulList = createUlList(list);
         updateUlList(ulList);
     })
-
-
-
-
-    // ul.append(getListContent()); 
-    // let ul = document.querySelector('ul.list');
-    // console.log('ul');
-    // readData(dataFile).then((result) => {
-    //     let li = document.createElement('li');
-    //     li.innerHTML(JSON.stringify(result));
-    //     ul.append(li);
-    // });
-
 }
+
+readData(urlDataFile);

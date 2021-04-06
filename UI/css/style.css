@@ -365,8 +365,7 @@ a {
 }
 
 .footer {
-    background-color: #313131;
-    height: 430px;   
+    background-color: #313131;    
     margin: 0 auto;  
 }
 
@@ -529,6 +528,12 @@ a {
         display: inline-block;
         float: none;
     }
+    .col1-4::after:nth-child(2) {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
   }
   
   @media (max-width: 767px) {
