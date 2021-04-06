@@ -28,15 +28,14 @@ a {
 
 .container {
     width: 100%;            
-    max-width: 1200px;
-    
+    max-width: 1200px;    
     margin: 0 auto;
     background-color: white;
     font-family: Georgia,Times,Times New Roman,serif; 
     position: relative;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
@@ -192,6 +191,17 @@ a {
     background-color: black;
     border-radius: 50%; 
 }
+
+.slider-control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
 .slider-control:hover {
     opacity: 1;
 }
@@ -200,8 +210,26 @@ a {
     left: 1%;
 }
 
+.slider-control-left::before {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 16px;
+    height: 28px;
+    background-image: url(../images/left_arrow.png);
+}
+
 .slider-control-right {
-    right: 1%;
+    right: 1%;        
+}
+
+.slider-control-right::before {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    width: 16px;
+    height: 28px;
+    background-image: url(../images/right_arrow.png);
 }
 
 .slide-switch {
@@ -264,7 +292,8 @@ a {
     box-sizing: border-box;  
     padding: 20px;
     width: calc(100%/3);
-    float: left;    
+    float: left;  
+    min-width: 237px;      
 }
 
 .service-item {
@@ -318,11 +347,12 @@ a {
     font-weight: bold;
 }
 
-.col1-4 {    
+.col1-4 {        
     box-sizing: border-box;  
     padding: 20px 10px 10px 10px;
     width: calc(100%/4);
     float: left;    
+    min-width: 183px;
 }
 
 .left {
@@ -331,11 +361,13 @@ a {
 
 .right {
     padding-right: 0px;
+    
 }
 
 .footer {
     background-color: #313131;
-    height: 430px;    
+    height: 430px;   
+    margin: 0 auto;  
 }
 
 .footer h4 {
@@ -366,13 +398,13 @@ a {
     margin-left: 4px;
 }
 
-.social-block div{
+.social-site{
     border-bottom: 1px solid #3a3a3a;
     margin-top: 16px;
 }
 
-.icon::before {    
-    content: '';    
+.circle {        
+    position: relative;
     width: 32px;
     height: 32px;    
     border-radius: 50%;    
@@ -380,6 +412,36 @@ a {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;    
     margin: 0px 8px 8px 0px;
+}
+
+.circle:hover {
+    background-color: transparent;
+}
+
+.icon {    
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 16px;    
+    height: 16px;
+    float: left;
+    background: url(../images/socail_icons.png)  no-repeat;;
+}
+
+.linkin {
+    background-position: 0px 0px;
+}
+
+.twitter {
+    background-position: -16px 0px;
+}
+
+.pinterest{
+    background-position: -32px 0px;
+}
+
+.rss{
+    background-position: -48px 0px;
 }
 
 .blog-block {
@@ -453,3 +515,64 @@ a {
 .copyright .right {
     float: right;
 }
+
+  /* Landscape - телефоны */
+  @media  (max-width: 480px) {
+    .col1-4 {
+        width: 100%;    
+    }
+  }
+ 
+  @media (min-width: 481px) and (max-width: 767px) {
+    .col1-4 {
+        width: 49%;
+        display: inline-block;
+        float: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col1-3 {
+        width: 100%;
+    }
+
+    .main-menu {
+        margin-right: 20px;        
+    }
+
+    .main-menu ul li a {
+        margin-top: 20px;
+        padding: 32px 5px 32px 5px;
+        font-size: 11px;
+    }
+
+    .shout {        
+        font-size: 16px;
+        padding: 20px 40px 20px 40px;
+    }
+    .slider-title h2 {
+        font-size: 16px;
+    }
+    .slider-title span {
+        display: none;
+    }
+  }
+
+
+ 
+  /* От портретного планшета до ландшафтного экрана и настольных дисплеев */
+  @media (min-width: 768px) and (max-width: 979px) {
+    .main-menu ul li a {
+        padding: 42px 10px 32px 10px;
+        font-size: 12px;
+    }
+
+    .shout {        
+        font-size: 18px;
+    }
+
+    .service-item img {
+        width: 48px;
+        height: 48px;
+    }
+   }
