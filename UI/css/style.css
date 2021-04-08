@@ -515,69 +515,66 @@ a {
     float: right;
 }
 
-  /* Landscape - телефоны */
-  @media  (max-width: 480px) {
-    .col1-4 {
-        width: 100%;    
-    }
-  }
- 
-  @media (min-width: 481px) and (max-width: 767px) {
-    .col1-4 {
-        width: 49%;
-        display: inline-block;
-        float: none;
-    }
-    .col1-4::after:nth-child(2) {
-        content: "";
-        clear: both;
-        display: table;
-    }
 
-  }
-  
-  @media (max-width: 767px) {
-    .col1-3 {
-        width: 100%;
-    }
+@media  (max-width: 480px) {
+.col1-4 {
+    width: 100%;    
+}
+}
 
-    .main-menu {
-        margin-right: 20px;        
-    }
+@media (min-width: 481px) and (max-width: 767px) {
+.col1-4 {
+    width: 49%;
+    display: inline-block;
+    float: none;
+}
+.col1-4::after:nth-child(2) {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-    .main-menu ul li a {
-        margin-top: 20px;
-        padding: 32px 5px 32px 5px;
-        font-size: 11px;
-    }
+}
 
-    .shout {        
-        font-size: 16px;
-        padding: 20px 40px 20px 40px;
-    }
-    .slider-title h2 {
-        font-size: 16px;
-    }
-    .slider-title span {
-        display: none;
-    }
-  }
+@media (max-width: 767px) {
+.col1-3 {
+    width: 100%;
+}
 
+.main-menu {
+    margin-right: 20px;        
+}
 
- 
-  /* От портретного планшета до ландшафтного экрана и настольных дисплеев */
-  @media (min-width: 768px) and (max-width: 979px) {
-    .main-menu ul li a {
-        padding: 42px 10px 32px 10px;
-        font-size: 12px;
-    }
+.main-menu ul li a {
+    margin-top: 20px;
+    padding: 32px 5px 32px 5px;
+    font-size: 11px;
+}
 
-    .shout {        
-        font-size: 18px;
-    }
+.shout {        
+    font-size: 16px;
+    padding: 20px 40px 20px 40px;
+}
+.slider-title h2 {
+    font-size: 16px;
+}
+.slider-title span {
+    display: none;
+}
+}
 
-    .service-item img {
-        width: 48px;
-        height: 48px;
-    }
-   }
+@media (min-width: 768px) and (max-width: 979px) {
+.main-menu ul li a {
+    padding: 42px 10px 32px 10px;
+    font-size: 12px;
+}
+
+.shout {        
+    font-size: 18px;
+}
+
+.service-item img {
+    width: 48px;
+    height: 48px;
+}
+}
