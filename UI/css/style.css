@@ -106,6 +106,11 @@ a {
     color: #707070;
 }
 
+.main-menu ul li a:active{
+    background: linear-gradient(0deg, #a0bb4e 0%, #a7c353 100%);
+    color: white;
+}
+
 .main-menu .select-menu a {
     background-color: #a7c353;
     color: white;
@@ -113,6 +118,11 @@ a {
 
 .main-menu .select-menu a:hover {
     background: linear-gradient(0deg, #a0bb4e 0%, #a7c353 100%);
+    color:white;
+}
+
+.main-menu .select-menu a:active {
+    background: linear-gradient(0deg, #b5df39 0%, #a7c353 100%);
     color:white;
 }
 
@@ -136,7 +146,6 @@ a {
     overflow: hidden;
 }
 
-
 .slider-wrapper {      
     position: relative;
     overflow: hidden;
@@ -156,6 +165,7 @@ a {
 
 .slider-title h2{   
    display: block;
+   cursor: pointer;
    width: 100%;
    padding: 8px 14px;
    margin: 10px 0px;
@@ -164,6 +174,10 @@ a {
    font-weight: normal;
    color: white;
    background-color: #a0bb4e;   
+}
+
+.slider-title h2:hover {
+   background-color: #96c017;   
 }
 
 .slider-title span{    
@@ -250,6 +264,11 @@ a {
     cursor: pointer;
 }
 
+.slider-point:hover {
+    background-color: #a7d323;
+    border-color: #a7d323;
+}
+
 .slider-point-active {
     background-color: transparent;
 }
@@ -288,6 +307,11 @@ a {
     float: right;     
 }
 
+.readmore:hover {
+    color: #b7df3f;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
 .col1-3 {    
     box-sizing: border-box;  
     padding: 20px;
@@ -296,9 +320,24 @@ a {
     min-width: 237px;      
 }
 
-.service-item {
-    padding-bottom: 90px;
+.service-item {    
+    margin-bottom: 10px;
+    cursor: pointer;
 } 
+
+.service-item:hover h5 , .service-item:hover p{
+    color: black;    
+}
+
+.service-item:hover img {
+    opacity: 1;
+}
+
+.service-item::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .service-item div{
     width: 65%;
@@ -311,6 +350,7 @@ a {
     background-color: whitesmoke;
     float: left;
     margin-right: 18px;
+    opacity: 0.8;
 }
 
 .service-item h5 {
@@ -369,6 +409,10 @@ a {
     margin: 0 auto;  
 }
 
+.footer a:hover {
+    color: #b7df3f;
+ }
+
 .footer h4 {
     color: white;
     font-size: 16px;    
@@ -397,9 +441,12 @@ a {
     margin-left: 4px;
 }
 
-.social-site{
+
+
+.social-site {
     border-bottom: 1px solid #3a3a3a;
-    margin-top: 16px;
+    margin-top: 8px;
+    padding-top: 8px;
 }
 
 .circle {        
@@ -411,6 +458,7 @@ a {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;    
     margin: 0px 8px 8px 0px;
+    cursor: pointer;
 }
 
 .circle:hover {
@@ -560,6 +608,9 @@ a {
 }
 .slider-title span {
     display: none;
+}
+.service-item div{
+    width: 70%;     
 }
 }
 
