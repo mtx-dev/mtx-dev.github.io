@@ -441,8 +441,6 @@ a {
     margin-left: 4px;
 }
 
-
-
 .social-site {
     border-bottom: 1px solid #3a3a3a;
     margin-top: 8px;
@@ -523,6 +521,10 @@ a {
 }
 
 .form-input:focus {
+    box-shadow: inset 0px 0px 3px 0 rgba(183, 223, 63, 0.938);    
+}
+
+.form-input:hover {
     background-color: #363636;
 }
 
